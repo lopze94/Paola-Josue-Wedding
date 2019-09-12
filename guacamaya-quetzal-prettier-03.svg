@@ -19,12 +19,21 @@
       .path {
         stroke-dasharray: 1400;
         stroke-dashoffset: -1400;
-        animation: dash 7s ease-out forwards;
+        animation: dash 12s ease infinite;
       }
 
       @keyframes dash {
-        to {
+        0% {
+          stroke-dashoffset: -1400;
+        }
+        45% {
           stroke-dashoffset: 0;
+        }
+        55% {
+          stroke-dashoffseet: 0;
+        }
+        100% {
+          stroke-dashoffset: 1400;
         }
       }
     </style>
